@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0.1px solid #bbb;
+}
+
+body {
+    font-size: 14px;
+}
+
+li {
+    list-style: none;
+}
+
+.logo-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.logo {
+    height: 40px;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    padding: 5px 15px;
+}
+
+header .carousel-caption h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 5px;
+}
+
+header .carousel-caption p {
+    margin: 0;
+    font-size: 12px;
+}
+
+header .carousel-caption {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    text-align: left;
+    width: 30%;
+    padding: 0;
+    text-shadow: none;
+}
+
+header .carousel-caption .btn {
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-top: 25px;
+    border-radius: 2px;
+    background: transparent;
+    border: 0.5px solid white;
+}
