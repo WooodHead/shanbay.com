@@ -5,7 +5,7 @@
 }
 
 body {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 li {
@@ -18,7 +18,7 @@ li {
 }
 
 .logo {
-    height: 40px;
+    height: 60px;
 }
 
 .menu {
@@ -34,14 +34,15 @@ li {
 }
 
 header .carousel-caption h2 {
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 400;
-    margin: 5px;
+    margin: 15px 0;
 }
 
 header .carousel-caption p {
     margin: 0;
-    font-size: 12px;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 header .carousel-caption {
@@ -55,10 +56,98 @@ header .carousel-caption {
 }
 
 header .carousel-caption .btn {
-    padding: 5px 10px;
+    padding: 10px 30px;
     font-size: 14px;
     margin-top: 25px;
     border-radius: 2px;
     background: transparent;
     border: 0.5px solid white;
+}
+
+.features {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.features h3 {
+    margin: 30px 0 20px;
+}
+
+.avatar {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.avatar-front {
+    display: block;
+    position: absolute;
+}
+
+.avatar-test {
+    background-image: url(./img/test.png);
+}
+
+.avatar-test:hover img {
+    top: -3px;
+}
+
+.avatar-insurance:hover img {
+    bottom: 6px;
+}
+
+.avatar-community:hover img {
+    top: -3px;
+}
+
+.avatar-insurance {
+    background-image: url(./img/insurance.png);
+}
+
+.avatar-community {
+    background-image: url(./img/community.png);
+}
+
+.avatar-test img {
+    width: 73px;
+    left: 19px;
+    top: 0;
+    transition: top 0.3s;
+}
+
+.avatar-insurance img {
+    width: 95px;
+    bottom: 3px;
+    left: -6px;
+    transition: bottom 0.3s;
+}
+
+.avatar-community img {
+    width: 55px;
+    left: 14px;
+    top: 0;
+    transition: top 0.3s;
+}
+
+header .carousel-control.right,
+header .carousel-control.left {
+    background-image: none;
+}
+
+footer {
+    background: #f4f4f4;
+    padding: 40px 0;
+}
+
+footer li {
+    margin: 10px 0;
+}
+
+footer a {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
 }
