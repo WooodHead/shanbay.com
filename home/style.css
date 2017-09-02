@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    outline: 0.1px solid #bbb;
+    /* outline: 0.1px solid #bbb; */
 }
 
 a {
@@ -39,14 +39,14 @@ li {
 }
 
 header .carousel-caption h2 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
     margin: 15px 0;
 }
 
 header .carousel-caption p {
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 10px;
 }
 
@@ -61,12 +61,28 @@ header .carousel-caption {
 }
 
 header .carousel-caption .btn {
-    padding: 10px 30px;
+    padding: 5px 20px;
     font-size: 14px;
-    margin-top: 25px;
+    margin-top: 15px;
     border-radius: 2px;
     background: transparent;
     border: 0.5px solid white;
+}
+
+header .carousel-caption .btn:active {
+    background: transparent;
+    color: #FFF;
+    border: 0.5px solid white;
+}
+
+.carousel {
+    border: 0.1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel img {
+    border-radius: 3px;
 }
 
 .features {
