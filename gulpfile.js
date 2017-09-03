@@ -25,6 +25,10 @@ var gulp = require('gulp'),
   // https://github.com/gulpjs/gulp/issues/355
   runSequence = require('run-sequence');
 
+var gulp = require('gulp'),
+  livereload = require('gulp-livereload');
+
+
 var bases = {
   login: 'src/login/',
   src: 'src',
@@ -98,12 +102,14 @@ gulp.task('minify-html', function () {
     .pipe(gulp.dest(bases.dist))
     .pipe(reload({
       stream: true
-    }));
+    }))
+    .pipe(livereload());
 });
 
 gulp.task('css', function () {
   gulp.src(bases.login + '/*.css')
-    .pipe(gulp.dest(bases.dist));
+    .pipe(gulp.dest(bases.dist))
+    .pipe(livereload());
 });
 
 gulp.task('lib', function () {
@@ -119,6 +125,7 @@ gulp.task('img', function () {
 });
 
 gulp.task('watch', function () {
+  livereload.listen();
   gulp.watch(bases.login + './*.html', ['minify-html']);
   gulp.watch(bases.login + './*.css', ['css']);
 });

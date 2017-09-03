@@ -25,7 +25,9 @@
   "bugs": {
     "url": "https://github.com/minamarkham/sassy-starter/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "gulp-livereload": "^3.8.1"
+  },
   "devDependencies": {
     "browser-sync": "^2.0.0-rc4",
     "colors": "^1.1.2",

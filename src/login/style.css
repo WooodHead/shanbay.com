@@ -97,6 +97,7 @@ body {
     color: #FFF;
     background: #23b598;
     font-size: 18px;
+    box-shadow: 0 4px 15px 0 rgba(36, 181, 151, 0.3);
 }
 
 .forget {
@@ -109,5 +110,30 @@ body {
 }
 
 .third-party {
-    margin: 60px 0;
+    margin: 40px 0;
+    color: #cacaca;
+}
+
+.third-party-title {
+    position: relative;
+    text-align: center;
+}
+
+.third-party-title:before,
+.third-party-title:after {
+    width: 40%;
+    height: 1px;
+    background: #cacaca;
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 10px;
+}
+
+.third-party-title:before {
+    left: 0;
+}
+
+.third-party-title:after {
+    right: 0;
 }
