@@ -2,56 +2,157 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>扇贝</title>
+  <link rel="shortcut icon" type="image/png" href="./img/shanbay_favicon.png" />
+
+
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+  <div id="shanbay">
+
 
     <nav class="navbar navbar-default" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Title</a>
-        </div>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="./img/logo_v4.png" alt="">
+        </a>
+      </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-            </ul>
-            <form class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Link</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">首页</a></li>
+          <li><a href="#">单词</a></li>
+          <li><a href="#">听力</a></li>
+          <li><a href="#">口语</a></li>
+          <li><a href="#">新闻</a></li>
+          <li><a href="#">读书</a></li>
+          <li><a href="#">炼句</a></li>
+          <li><a href="#">课程</a></li>
+          <li><a href="#">社区</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">帮助</a></li>
+          <li><a href="#">登录</a></li>
+          <li><a href="#">注册</a></li>
+
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
     </nav>
 
+    <div class="main">
+      <div class="login-client-page">
 
+        <div class="login-left slides">
+          <!-- 
+          <div id="carousel-id" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-id" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+              <li data-target="#carousel-id" data-slide-to="2" class=""></li>
+              <li data-target="#carousel-id" data-slide-to="3" class=""></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="item active">
+                <img alt="First slide" src="./img/intro-client-academy.png">
+                <div class="container">
+                  <div class="carousel-caption">
+
+
+                    <h3 class="title">坚持打卡</h3>
+                    <p class="content">享受学习的快乐</p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img alt="First slide" src="./img/intro-client-checkin.png">
+                <div class="container">
+                  <div class="carousel-caption">
+
+                    <h3 class="title">学习社区</h3>
+                    <p class="content">加入小组，和小伙伴们一起坚持</p>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <img alt="First slide" src="./img/intro-client-community.png">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h3 class="title">考试保险</h3>
+                    <p class="content">备考用扇贝，没过就赔钱</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <img alt="First slide" src="./img/intro-client-insurance.png">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h3 class="title">扇贝课程</h3>
+                    <p class="content">更少的时间，更好的效果</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-id" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-id" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+          </div> -->
+
+
+
+        </div>
+
+        <div class="login-right login-wrap">
+          <!-- 
+          <form action="" method="POST" role="form">
+            <legend>Form title</legend>
+
+            <div class="form-group">
+              <label for="">label</label>
+              <input type="text" class="form-control" id="" placeholder="Input field">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form> -->
+
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
