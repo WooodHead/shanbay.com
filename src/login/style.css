@@ -34,16 +34,52 @@ body {
     height: 100%;
 }
 
+.main {
+    vertical-align: middle;
+}
+
 .main .carousel-inner {
     overflow: hidden;
+    height: 100%;
+}
+
+.main .carousel-inner .item {
+    height: 100%;
 }
 
 .main .carousel {
     display: block;
+    height: 70%;
+    margin-top: 15%;
+}
+
+.main .carousel-caption {
+    bottom: 50px;
+    text-shadow: none;
+    color: #333;
+}
+
+.main .carousel-caption h3 {
+    font-weight: normal;
 }
 
 .main .carousel-control {
     display: none;
+}
+
+.main .carousel-indicators {
+    vertical-align: middle;
+}
+
+.main .carousel-indicators li.active {
+    background: #229e85;
+}
+
+.main .carousel-indicators li {
+    background: #ccc;
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
 }
 
 .main .carousel img {
@@ -136,4 +172,27 @@ body {
 
 .third-party-title:after {
     right: 0;
+}
+
+.third-party-icon {
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.weixin {
+    background-image: url(./img/weixin.png);
+}
+
+.weibo {
+    background-image: url(./img/weibo.png);
+}
+
+.weixin:hover {
+    background-image: url(./img/weixin2.png);
+}
+
+.weibo:hover {
+    background-image: url(./img/weibo2.png);
 }
