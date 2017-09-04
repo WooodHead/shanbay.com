@@ -15,6 +15,10 @@ body {
     background: inherit;
 }
 
+#shanbay .navbar-nav li:hover {
+    background: #017760;
+}
+
 .logo {
     width: 80px;
     margin-top: -5px;
@@ -136,6 +140,11 @@ body {
     box-shadow: 0 4px 15px 0 rgba(36, 181, 151, 0.3);
 }
 
+.btn-login:hover {
+    background: #21ac91;
+    color: #FFF;
+}
+
 .forget {
     float: right;
 }
@@ -143,6 +152,10 @@ body {
 .signup {
     margin: 10px 0 20px;
     color: #999;
+}
+
+.signup a {
+    color: #24b598;
 }
 
 .third-party {
@@ -175,10 +188,11 @@ body {
 }
 
 .third-party-icon {
-    width: 64px;
-    height: 64px;
+    width: 40px;
+    height: 40px;
     display: inline-block;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .weixin {

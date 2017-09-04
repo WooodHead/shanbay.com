@@ -30,8 +30,11 @@ var gulp = require('gulp'),
 
 
 var bases = {
-  login: 'src/login/',
+  pages: ['home', 'login', 'speak'],
   src: 'src',
+  home: 'src/home/',
+  login: 'src/login/',
+  speak: 'src/speak/',
 
   dist: 'dist/',
 };
@@ -94,23 +97,6 @@ gulp.task('clean:dist', function () {
 
 
 
-gulp.task('minify-html', function () {
-  gulp.src(bases.login + './*.html')
-    .pipe(htmlmin({
-      collapseWhitespace: true
-    }))
-    .pipe(gulp.dest(bases.dist))
-    .pipe(reload({
-      stream: true
-    }))
-    .pipe(livereload());
-});
-
-gulp.task('css', function () {
-  gulp.src(bases.login + '/*.css')
-    .pipe(gulp.dest(bases.dist))
-    .pipe(livereload());
-});
 
 gulp.task('lib', function () {
   // copy modernizr to dist directly
@@ -118,24 +104,60 @@ gulp.task('lib', function () {
     .pipe(gulp.dest(bases.dist + '/bower_components'));
 });
 
+
+
+gulp.task('html', function () {
+  bases.pages.forEach(function (item, index) {
+    gulp.src(bases.src + '/' + item + '/*.html')
+      .pipe(htmlmin({
+        collapseWhitespace: true
+      }))
+      .pipe(gulp.dest(bases.dist + '/' + item))
+      .pipe(reload({
+        stream: true
+      }))
+      .pipe(livereload());
+  });
+
+});
+
+gulp.task('css', function () {
+  bases.pages.forEach(function (item, index) {
+    gulp.src(bases.src + '/' + item + '/*.css')
+      .pipe(gulp.dest(bases.dist + '/' + item))
+      .pipe(livereload());
+  });
+});
+
+
 gulp.task('img', function () {
   // copy modernizr to dist directly
-  gulp.src(bases.login + '/img/**/*.*')
-    .pipe(gulp.dest(bases.dist + '/img'));
+  bases.pages.forEach(function (item, index) {
+    gulp.src(bases.src + '/' + item + '/img/**/*.*')
+      .pipe(gulp.dest(bases.dist + '/' + item + '/img'))
+      .pipe(livereload());
+  });
 });
+
+
 
 gulp.task('watch', function () {
   livereload.listen();
-  gulp.watch(bases.login + './*.html', ['minify-html']);
-  gulp.watch(bases.login + './*.css', ['css']);
+  gulp.watch(bases.src + '/**/*.html', ['html']);
+  gulp.watch(bases.src + '/**/*.css', ['css']);
+  gulp.watch(bases.src + '/**/img/*', ['img']);
+
 });
+
 // BUILD TASKS
 // ------------
+
+
 
 gulp.task('default', function (done) {
   runSequence('build', done);
 });
 
 gulp.task('build', function (done) {
-  runSequence('clean:dist', 'minify-html', 'css', 'img', 'lib', done);
+  runSequence('clean:dist', 'html', 'css', 'img', 'lib', done);
 });
