@@ -130,6 +130,14 @@ gulp.task('css', function () {
 });
 
 
+gulp.task('js', function () {
+  bases.pages.forEach(function (item, index) {
+    gulp.src(bases.src + '/' + item + '/*.js')
+      .pipe(gulp.dest(bases.dist + '/' + item))
+      .pipe(livereload());
+  });
+});
+
 gulp.task('img', function () {
   // copy modernizr to dist directly
   bases.pages.forEach(function (item, index) {
@@ -146,6 +154,7 @@ gulp.task('watch', function () {
   gulp.watch(bases.src + '/**/*.html', ['html']);
   gulp.watch(bases.src + '/**/*.css', ['css']);
   gulp.watch(bases.src + '/**/img/*', ['img']);
+  gulp.watch(bases.src + '/**/*.js', ['js']);
 
 });
 
@@ -153,11 +162,10 @@ gulp.task('watch', function () {
 // ------------
 
 
-
 gulp.task('default', function (done) {
   runSequence('build', done);
 });
 
 gulp.task('build', function (done) {
-  runSequence('clean:dist', 'html', 'css', 'img', 'lib', done);
+  runSequence('clean:dist', 'html', 'css', 'js', 'img', 'lib', done);
 });

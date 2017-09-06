@@ -1,11 +1,14 @@
 * {
   /* outline: 1px solid #ccc; */
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background: #EEE;
   font-size: 16px;
+  padding-bottom: 100px;
 }
 
 #speak .navbar {
@@ -38,6 +41,82 @@ body {
   margin-top: -5px;
 }
 
+#searchinput {
+  border-radius: 20px 0 0 20px;
+  border: 1px solid #5AC5AF;
+  background: transparent;
+  color: #FFF;
+  width: 100px;
+  transition: width 0.5s;
+  padding: 4px 4px 4px 15px;
+  line-height: 20px;
+  border-right: none;
+  box-shadow: none;
+}
+
+#searchinput::placeholder {
+  color: #FFF;
+}
+
+#searchinput:focus::placeholder {
+  color: #ccc;
+}
+
+#searchinput:focus {
+  box-shadow: none;
+  border-right: none;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group.focus #searchinput {
+  background: #FFF;
+  color: #271313;
+  width: 200px;
+  border-color: #d5d5d5;
+}
+
+#searchclear {
+  position: absolute;
+  right: 31px;
+  top: 0;
+  bottom: 0;
+  height: 18px;
+  margin: auto;
+  font-size: 14px;
+  cursor: pointer;
+  color: #ccc;
+  padding: 2px;
+  z-index: 100;
+  padding-right: 5px;
+  border-right: 1px solid #ccc;
+}
+
+#searchclear.hide {
+  display: none;
+}
+
+#searchicon {
+  border-radius: 0 20px 20px 0;
+  border: 1px solid #5AC5AF;
+  border-left: none;
+  background: transparent;
+  color: #fff;
+  /* padding-left: 1px; */
+  /* 
+  padding: 4px 5px;
+  line-height: 20px;
+  font-size: 14px; */
+}
+
+.focus #searchicon {
+  background: #FFF;
+  color: #ccc;
+  border-color: #d5d5d5;
+}
+
 .header {
   background-image: url(./img/intro-brand.png);
   background-size: cover;
@@ -53,14 +132,15 @@ body {
 
 .features {
   background: #FFF;
-  margin: 50px;
+  margin: 70px 0;
   border-radius: 3px;
   padding: 40px;
+  position: relative;
 }
 
 .feature-section {
-  padding: 10px;
-  height: 150px;
+  padding: 10px 0;
+  height: 120px;
 }
 
 .feature-section .img-wrap {
@@ -71,17 +151,113 @@ body {
 
 .feature-section img {
   width: 80px;
-  /* float:left; */
 }
 
 .feature-section .text-wrap {
   display: inline-block;
-  height: 130px;
+  height: 100px;
   margin-left: 30px;
   vertical-align: middle;
 }
 
 .feature-section h3 {
   font-weight: normal;
-  padding-top: 15px;
+  /* padding-top: 15px; */
+}
+
+.features .iphone-wrap {
+  position: absolute;
+  top: -45px;
+  right: 12%;
+  /* border: 3px solid black; */
+  width: 300px;
+}
+
+.features .iphone-wrap .mobile {
+  width: 100%;
+}
+
+.features .iphone-wrap .demo {
+  position: absolute;
+  width: 244px;
+  top: 9.3%;
+  left: 3.4%;
+}
+
+.download {
+  position: absolute;
+  right: 5%;
+  bottom: 20%;
+}
+
+.download a {
+  padding: 10px 25px;
+  background: #29c192;
+  color: #FFF;
+  border-radius: 4px;
+  /* position: relative; */
+}
+
+.download img {
+  position: absolute;
+  width: 100px;
+}
+
+.main {
+  border-radius: 4px;
+  background: #FFF;
+  padding: 40px;
+  margin-top: 100px;
+}
+
+.main h3 {
+  border-bottom: 1px solid #eee;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.main h3 small {
+  float: right;
+}
+
+.main .col-md-6 {
+  padding: 0;
+}
+
+.lesson-wrap {
+  padding-right: 50px;
+  margin-bottom: 20px;
+}
+
+.lesson {
+  border-radius: 5px;
+  border: 1px solid #eee;
+  display: block;
+}
+
+.lesson img {
+  float: left;
+  width: 50%;
+  border-radius: 5px 0 0 5px;
+}
+
+.lesson .text-wrap {
+  float: right;
+  padding: 20px;
+  width: 50%;
+}
+
+.lesson h4 {
+  font-weight: normal;
+  color: #333;
+}
+
+.lesson p {
+  color: #666;
+}
+
+.lesson a {
+  color: #29c192;
+  cursor: pointer;
 }

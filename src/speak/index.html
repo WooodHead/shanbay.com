@@ -48,18 +48,21 @@
             <li><a href="#">社区</a></li>
           </ul>
 
-          <form class="navbar-form navbar-right" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
+          <form id="searchform" class="navbar-form navbar-right" role="search">
+            <div class="input-group">
+              <input id="searchinput" type="search" class="form-control" placeholder="查词" value="">
+              <!-- <span id="searchclear" class="glyphicon glyphicon-remove-circle"></span> -->
+              <i id="searchclear" class="fa fa-remove hide"></i>
+              <!-- <i id="searchicon" class="fa fa-search"></i> -->
+              <span id="searchicon" class="fa fa-search input-group-addon"></span>
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
           </form>
 
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">帮助</a></li>
             <li><a href="#">登录</a></li>
-            <li><a href="#">注册2</a></li>
-            <li class="dropdown">
+            <li><a href="#">注册</a></li>
+            <!-- <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Action</a></li>
@@ -67,7 +70,7 @@
                 <li><a href="#">Something else here</a></li>
                 <li><a href="#">Separated link</a></li>
               </ul>
-            </li>
+            </li> -->
 
           </ul>
         </div>
@@ -83,81 +86,208 @@
       </div>
     </div>
 
-    <div class="features">
-      <div class="feature-section">
-        <div class="img-wrap">
-          <img src="./img/icon-chats.png">
+    <div class="container">
+
+      <div class="features">
+        <div class="feature-section">
+          <div class="img-wrap">
+            <img src="./img/icon-chats.png">
+          </div>
+          <div class="text-wrap">
+            <h3>跟读模仿，听音复述</h3>
+            <p>逐句听与练，记忆强化，虐才有效</p>
+          </div>
         </div>
-        <div class="text-wrap">
-          <h3>跟读模仿，听音复述</h3>
-          <p>逐句听与练，记忆强化，虐才有效</p>
+        <div class="feature-section">
+          <div class="img-wrap">
+            <img src="./img/icon-books.png">
+          </div>
+          <div class="text-wrap">
+            <h3>优质课程，攻克表达难关</h3>
+            <p>多样场景，实用内容，重磅推出雅思口语系列</p>
+          </div>
+        </div>
+        <div class="feature-section">
+          <div class="img-wrap">
+            <img src="./img/icon-lights.png">
+          </div>
+          <div class="text-wrap">
+            <h3>发音打分，内容讲解</h3>
+            <p>练就地道发音，听说读写融会贯通</p>
+          </div>
+        </div>
+
+        <div class="iphone-wrap">
+          <img class="mobile" src="./img/mobile.png" alt="">
+          <img class="demo" src="./img/demo.gif" alt="">
+        </div>
+
+        <div class="download">
+          <img src="./img/app-download-qrcode.png" alt="">
+          <a href="">下载APP</a>
         </div>
       </div>
-      <div class="feature-section">
-        <div class="img-wrap">
-          <img src="./img/icon-books.png">
-        </div>
-        <div class="text-wrap">
-          <h3>优质课程，攻克表达难关</h3>
-          <p>多样场景，实用内容，重磅推出雅思口语系列</p>
-        </div>
-      </div>
-      <div class="feature-section">
-        <div class="img-wrap">
-          <img src="./img/icon-lights.png">
-        </div>
-        <div class="text-wrap">
-          <h3>发音打分，内容讲解</h3>
-          <p>练就地道发音，听说读写融会贯通</p>
-        </div>
-      </div>
-      <!-- <div class="intro-desc container">
-        <div class="title-section">
-          <img src="https://static.baydn.com/speak/images/icon-chats.png">
-          <div class="title-desc">
-            <h4>跟读模仿，听音复述</h4>
-            <div class="desc">
-              <p>逐句听与练，记忆强化，虐才有效</p>
+
+
+
+
+
+
+
+
+      <div class="main">
+
+        <div class="row">
+          <h3>雅思
+            <small>查看更多</small>
+          </h3>
+
+          <div class="col-md-6">
+            <div class="lesson-wrap">
+              <div class="lesson clearfix">
+                <img src="./img/1.png" alt="">
+                <div class="text-wrap">
+                  <h4>雅思Part1: 个人喜好</h4>
+                  <p>雅思口语Part 1练习</p>
+                  <a href="">共有10单元，44节课</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="lesson-wrap">
+              <div class="lesson clearfix">
+                <img src="./img/2.png" alt="">
+                <div class="text-wrap">
+
+                  <h4>雅思Part 1：日常生活</h4>
+                  <p>雅思口语考试Part 1训练</p>
+                  <a>共有9 单元， 41 节课</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="title-section">
-          <img src="https://static.baydn.com/speak/images/icon-books.png">
-          <div class="title-desc">
-            <h4>优质课程，攻克表达难关</h4>
-            <div class="desc">
-              <p>多样场景，实用内容，重磅推出雅思口语系列</p>
+
+
+
+        <div class="row">
+          <h3>基础
+            <small>查看更多</small>
+          </h3>
+
+          <div class="col-md-6">
+            <div class="lesson-wrap">
+              <div class="lesson clearfix">
+                <img src="./img/3.png" alt="">
+                <div class="text-wrap">
+                  <h4>学会表达自己：初级</h4>
+                  <p>教你花样表达自己。</p>
+                  <a>共有4 单元， 20 节课</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="lesson-wrap">
+              <div class="lesson clearfix">
+                <img src="./img/4.png" alt="">
+                <div class="text-wrap">
+                  <h4>学会表达自己：进阶</h4>
+                  <p>教你花样表达自己。</p>
+                  <a>共有4 单元， 20 节课</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="title-section">
-          <img src="https://static.baydn.com/speak/images/icon-lights.png">
-          <div class="title-desc">
-            <h4>发音打分，内容讲解</h4>
-            <div class="desc">
-              <p>练就地道发音，听说读写融会贯通</p>
+
+
+        <div class="row">
+          <h3>美语
+            <small>查看更多</small>
+          </h3>
+
+          <div class="col-md-6">
+            <div class="lesson-wrap">
+              <div class="lesson clearfix">
+                <img src="./img/5.png" alt="">
+                <div class="text-wrap">
+                  <h4>校园生活口语：课外生活</h4>
+                  <p>学地道表达，校园生活轻松聊。</p>
+                  <a>共有2 单元， 15 节课</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="lesson-wrap">
+              <div class="lesson clearfix">
+                <img src="./img/6.png" alt="">
+                <div class="text-wrap">
+                  <h4>校园生活口语：学习</h4>
+                  <p>来，我们聊聊学习吧，用英语。</p>
+                  <a>共有2 单元， 14 节课</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="download-section">
-          <div class="download-section-content">
-            <img src="https://static.baydn.com/speak/images/app-download-qrcode.png"><a href="javascript:;">下载APP</a></div>
+
+        <div class="row">
+          <h3>美语
+            <small>查看更多</small>
+          </h3>
+
+          <div class="col-md-6">
+            <div class="lesson-wrap">
+              <div class="lesson clearfix">
+                <img src="./img/7.png" alt="">
+                <div class="text-wrap">
+                  <h4>商务礼节</h4>
+                  <p>你的职场英语救星</p>
+                  <a>共有10 单元， 50 节课</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="lesson-wrap">
+              <div class="lesson clearfix">
+                <img src="./img/4.png" alt="">
+                <div class="text-wrap">
+
+                  <h4>更多课程，敬请期待</h4>
+                  <p>之后会有更多的课程出现哦</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="mobile-preview">
-          <img src="https://static.baydn.com/speak/images/mobile.png">
-          <img class="content" src="https://static.baydn.com/speak/images/demo.gif">
-        </div>
-      </div> -->
+
+
+
+      </div>
+
+
     </div>
-
-
   </div>
+
+
+
+
 
 
 
 
   <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
   <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./main.js"></script>
 </body>
 
 </html>
