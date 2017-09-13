@@ -5,6 +5,7 @@
     height: 60px;
     background-color: #222222;
 }
-.footer > .container {
+
+.footer>.container {
     margin: 20px;
 }

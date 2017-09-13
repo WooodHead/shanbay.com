@@ -4,6 +4,9 @@ const gulp = require('gulp'),
     htmlmin = require('gulp-htmlmin'),
     nunjucksRender = require('gulp-nunjucks-render'); // importing the plugin
 
+var concatCss = require('gulp-concat-css');
+
+
 const PATHS = {
     output: 'dist',
     templates: 'src/templates',
@@ -13,7 +16,7 @@ const PATHS = {
 // writing up the gulp nunjucks task
 gulp.task('nunjucks', function () {
     console.log('Rendering nunjucks files..');
-    return gulp.src(PATHS.pages + '/**/*.+(html|js|css)')
+    return gulp.src(PATHS.pages + '/**/*.+(html|js)')
         .pipe(nunjucksRender({
             path: [PATHS.templates],
             watch: true,
@@ -42,11 +45,22 @@ gulp.task('browserSync', function () {
 
 gulp.task('watch', function () {
     // trigger Nunjucks render when pages or templates changes
-    gulp.watch([PATHS.pages + '/**/*.+(html|js|css)', PATHS.templates + '/**/*.+(html|js|css)'], ['nunjucks'])
+    gulp.watch([PATHS.pages + '/**/*.+(html|js)', PATHS.templates + '/**/*.+(html|js)'], ['nunjucks'])
+    gulp.watch([PATHS.templates + '/**/*.+(css)'], ['css'])
 
     // reload browsersync when `dist` changes
     gulp.watch(PATHS.output + '/*').on('change', browserSync.reload);
+
 });
+
+
+
+gulp.task('css', function () {
+    return gulp.src(PATHS.templates + '/**/*.css')
+        .pipe(concatCss("bundle.css"))
+        .pipe(gulp.dest(PATHS.output));
+});
+
 
 gulp.task('minify', function () {
     return gulp.src(PATHS.output + '/*.html')
@@ -64,4 +78,4 @@ gulp.task('minify', function () {
 gulp.task('auto', ['browserSync', 'watch']);
 
 //default task to be run with gulp
-gulp.task('default', ['nunjucks']);
+gulp.task('default', ['css', 'nunjucks']);
