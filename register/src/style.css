@@ -23,6 +23,22 @@ body {
   margin-top: -10px;
 }
 
+#navbar .nav-dot {
+  /* display: inline-block; */
+  float: left;
+  vertical-align: middle;
+  padding: 15px 0;
+  color: #FFF;
+}
+
+#navbar .login a {
+  padding-right: 8px;
+}
+
+#navbar .register a {
+  padding-left: 8px;
+}
+
 .main {
   width: 960px;
   height: 770px;
@@ -78,7 +94,7 @@ img {
   line-height: 50px;
   height: 50px;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .input-wrap i {
@@ -165,8 +181,10 @@ img {
   cursor: pointer;
 }
 
-.forms button {
+.forms .btn-register {
   width: 100%;
+  background: #229e85;
+  border-color: #229e85;
 }
 
 .slides .carousel-control {
@@ -212,4 +230,38 @@ img {
 
 .slides .carousel-caption .content {
   font-size: 16px;
+}
+
+.third-party {
+  text-align: center;
+  color: #ccc;
+}
+
+.third-party .divider {
+  margin: 40px auto 20px;
+  font-size: 14px;
+}
+
+.third-party .divider:before,
+.third-party .divider:after {
+  width: 30%;
+  height: 1px;
+  background: #ccc;
+  display: inline-block;
+  content: " ";
+  vertical-align: middle;
+  margin: 0 20px;
+}
+
+.third-party i {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.third-party .weixin:hover {
+  color: green;
+}
+
+.third-party .weibo:hover {
+  color: red;
 }
