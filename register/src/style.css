@@ -62,7 +62,7 @@ img {
   display: inline-block;
   width: 50%;
   vertical-align: top;
-  padding: 50px;
+  padding: 50px 70px;
   background: #FFF;
   height: 100%;
   border-radius: 0 5px 5px 0;
@@ -86,7 +86,8 @@ img {
   z-index: 100;
   font-size: 25px;
   left: 15px;
-  top: 13px;
+  top: 12px;
+  color: #999;
 }
 
 .input-wrap input {
@@ -98,6 +99,15 @@ img {
   font-size: 18px;
   border-radius: 5px;
   border: 1px solid #cacaca;
+}
+
+.input-wrap input:focus {
+  border: 1px solid #209e85;
+  box-shadow: none;
+}
+
+.input-wrap input:focus+i {
+  color: #209e85;
 }
 
 .terms-box>* {
@@ -139,6 +149,20 @@ img {
   font-size: 18px;
   line-height: 20px;
   text-align: center;
+}
+
+.captcha input {
+  width: 67%;
+  position: absolute;
+  left: 0;
+}
+
+.captcha img {
+  position: absolute;
+  right: 0;
+  width: 90px;
+  height: 46px;
+  cursor: pointer;
 }
 
 .forms button {
