@@ -1,3 +1,7 @@
+* {
+  outline: 1px solid #ddd;
+}
+
 li {
   list-style: none;
 }
@@ -17,4 +21,8 @@ li {
 
 .news-img {
   width: 100%;
+}
+
+.main {
+  padding: 20px;
 }
