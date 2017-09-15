@@ -1,0 +1,212 @@
+body {
+    background: #eee;
+    font-size: 16px;
+}
+
+#shanbay .navbar {
+    background: #209e85;
+}
+
+#shanbay .navbar-nav li>a {
+    color: #f5f5f5;
+}
+
+#shanbay .navbar-nav li.active>a {
+    background: inherit;
+}
+
+#shanbay .navbar-nav li:hover {
+    background: #017760;
+}
+
+.logo {
+    width: 80px;
+    margin-top: -5px;
+}
+
+.login-client-page {
+    width: 900px;
+    height: 560px;
+    background: #fdfdfd;
+}
+
+.slides {
+    float: left;
+    /* display: inline-block; */
+    width: 50%;
+    background: #f6f6f6;
+    height: 100%;
+}
+
+.main {
+    vertical-align: middle;
+}
+
+.main .carousel-inner {
+    overflow: hidden;
+    height: 100%;
+}
+
+.main .carousel-inner .item {
+    height: 100%;
+}
+
+.main .carousel {
+    display: block;
+    height: 70%;
+    margin-top: 15%;
+}
+
+.main .carousel-caption {
+    bottom: 50px;
+    text-shadow: none;
+    color: #333;
+}
+
+.main .carousel-caption h3 {
+    font-weight: normal;
+}
+
+.main .carousel-control {
+    display: none;
+}
+
+.main .carousel-indicators {
+    vertical-align: middle;
+}
+
+.main .carousel-indicators li.active {
+    background: #229e85;
+}
+
+.main .carousel-indicators li {
+    background: #ccc;
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+}
+
+.main .carousel img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.login-client-page {
+    margin: 100px auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-wrap {
+    float: right;
+    width: 50%;
+    height: 100%;
+    padding: 5%;
+}
+
+.login-wrap .input-container {
+    position: relative;
+}
+
+.login-wrap form i {
+    position: absolute;
+    font-size: 25px;
+    top: 10px;
+    left: 10px;
+    color: #ccc;
+}
+
+.login-wrap form input:focus+i {
+    color: #24b598;
+}
+
+.login-wrap form input:focus {
+    border: 1px solid #24b598;
+    box-shadow: none;
+}
+
+.login-wrap form input {
+    padding: 20px 40px;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 8px;
+    color: #FFF;
+    background: #23b598;
+    font-size: 18px;
+    box-shadow: 0 4px 15px 0 rgba(36, 181, 151, 0.3);
+}
+
+.btn-login:hover {
+    background: #21ac91;
+    color: #FFF;
+}
+
+.forget {
+    float: right;
+}
+
+.signup {
+    margin: 10px 0 20px;
+    color: #999;
+}
+
+.signup a {
+    color: #24b598;
+}
+
+.third-party {
+    margin: 40px 0;
+    color: #cacaca;
+}
+
+.third-party-title {
+    position: relative;
+    text-align: center;
+}
+
+.third-party-title:before,
+.third-party-title:after {
+    width: 40%;
+    height: 1px;
+    background: #cacaca;
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 10px;
+}
+
+.third-party-title:before {
+    left: 0;
+}
+
+.third-party-title:after {
+    right: 0;
+}
+
+.third-party-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.weixin {
+    background-image: url(./img/login/weixin.png);
+}
+
+.weibo {
+    background-image: url(./img/login/weibo.png);
+}
+
+.weixin:hover {
+    background-image: url(./img/login/weixin2.png);
+}
+
+.weibo:hover {
+    background-image: url(./img/login/weibo2.png);
+}

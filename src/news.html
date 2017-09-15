@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="news.css">
+</head>
+
+<body>
+
+
+  <nav id="navbar" class="navbar navbar-default" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img class="logo" src="./img/logo_v4.png" alt="">
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">首页</a></li>
+        <li><a href="#">单词</a></li>
+        <li><a href="#">听力</a></li>
+        <li><a href="#">口语</a></li>
+        <li><a href="#">新闻</a></li>
+        <li><a href="#">读书</a></li>
+        <li><a href="#">炼句</a></li>
+        <li><a href="#">课程</a></li>
+        <li><a href="#">社区</a></li>
+
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">帮助</a></li>
+        <li class="login"><a href="#">登录</a></li>
+        <span class="nav-dot">·</span>
+        <li class="register"><a href="#">注册</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </nav>
+
+  <div class="container">
+
+
+    <div role="tabpanel">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active">
+          <a href="#home" aria-controls="home" role="tab" data-toggle="tab">新闻首页</a>
+        </li>
+        <li role="presentation">
+          <a href="#tab" aria-controls="tab" role="tab" data-toggle="tab">我的新闻</a>
+        </li>
+        <li role="presentation">
+          <a href="#tab" aria-controls="tab" role="tab" data-toggle="tab">阅读计划</a>
+        </li>
+
+        <li role="presentation">
+          <a href="#tab" aria-controls="tab" role="tab" data-toggle="tab">阅读进度</a>
+        </li>
+      </ul>
+
+      <!-- <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="home">...</div>
+      <div role="tabpanel" class="tab-pane" id="tab">...</div>
+    </div> -->
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-sm-9">
+
+        <div class="main">
+          <div class="header">
+            <img src="./img/alibaba.png" alt="">
+          </div>
+
+          <div class="news-container">
+            <ul class="news-list">
+              <li class="news-item">
+                <a href="">
+                  <h3 class="news-title">Police, Emergency Crews Rush to West London Subway Station</h3>
+
+                  <div class="row">
+                    <div class="col-sm-4 ">
+                      <img class="news-img" src="./img/news/police.png" alt="">
+                    </div>
+
+                    <div class="col-sm-8 news-info">
+                      <p class="news-sumary">LONDON — Heavily armed police rushed to an incident at a London underground station Friday with local
+                        media reporting there had been an explosion on a train. A Reuters ...</p>
+                      <div class="news-meta">难度 雅思 六级 单词：239 读后感：29</div>
+                    </div>
+                  </div>
+
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-sm-3">
+        <div class="sidebar">
+
+          <h2>本周最受关注新闻</h2>
+          <ul class="week-news-list">
+
+          </ul>
+
+          <div class="download-app">
+
+            <div class="row">
+              <div class="col-sm-4">
+                <img src="./img/news/news-download.png" alt="">
+              </div>
+              <div class="col-sm-8">
+
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+
+  <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

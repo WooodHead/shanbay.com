@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 0.1px solid #bbb; */
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+body {
+    font-size: 16px;
+}
+
+li {
+    list-style: none;
+}
+
+.logo-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.logo {
+    height: 60px;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    padding: 5px 15px;
+}
+
+header .carousel-caption h2 {
+    font-size: 25px;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+header .carousel-caption p {
+    margin: 0;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+header .carousel-caption {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    text-align: left;
+    width: 30%;
+    padding: 0;
+    text-shadow: none;
+    color: #FFF;
+}
+
+header .carousel-caption .btn {
+    padding: 5px 20px;
+    font-size: 14px;
+    margin-top: 15px;
+    border-radius: 2px;
+    background: transparent;
+    border: 0.5px solid white;
+}
+
+header .carousel-caption .btn:active {
+    background: transparent;
+    color: #FFF;
+    border: 0.5px solid white;
+}
+
+.carousel {
+    border: 0.1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel img {
+    border-radius: 3px;
+}
+
+.features {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.features h3 {
+    margin: 30px 0 20px;
+    font-weight: 400;
+    color: #333;
+}
+
+.features p {
+    color: #666;
+}
+
+.avatar {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.avatar-front {
+    display: block;
+    position: absolute;
+}
+
+.avatar-test {
+    background-image: url(./img/home/test.png);
+}
+
+.avatar-test:hover img {
+    top: -3px;
+}
+
+.avatar-insurance:hover img {
+    bottom: 6px;
+}
+
+.avatar-community:hover img {
+    top: -3px;
+}
+
+.avatar-insurance {
+    background-image: url(./img/home/insurance.png);
+}
+
+.avatar-community {
+    background-image: url(./img/home/community.png);
+}
+
+.avatar-test img {
+    width: 73px;
+    left: 19px;
+    top: 0;
+    transition: top 0.3s;
+}
+
+.avatar-insurance img {
+    width: 95px;
+    bottom: 3px;
+    left: -6px;
+    transition: bottom 0.3s;
+}
+
+.avatar-community img {
+    width: 55px;
+    left: 14px;
+    top: 0;
+    transition: top 0.3s;
+}
+
+header .carousel-control.right,
+header .carousel-control.left {
+    background-image: none;
+}
+
+footer {
+    background: #f4f4f4;
+    padding: 40px 0;
+}
+
+footer li {
+    margin: 10px 0;
+}
+
+footer a {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
