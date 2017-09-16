@@ -15,7 +15,6 @@ const PATHS = {
   img: 'img'
 }
 
-
 gulp.task('browserSync', function () {
   browserSync.init({
     server: {
@@ -53,7 +52,10 @@ gulp.task('css', function () {
     .pipe(gulp.dest(PATHS.output));
 });
 
-
+gulp.task('js', function () {
+  return gulp.src(PATHS.src + '/**/*.js')
+    .pipe(gulp.dest(PATHS.output + '/js'));
+});
 
 gulp.task('html', function () {
   return gulp.src(PATHS.src + '/**/*.html')
@@ -71,10 +73,11 @@ gulp.task('watch', function () {
   gulp.watch(PATHS.src + '/**/*.css', ['css'])
   gulp.watch(PATHS.lib + '/**/*.*', ['lib'])
   gulp.watch(PATHS.img + '/**/*.*', ['img'])
+  gulp.watch(PATHS.src + '/**/*.js', ['js'])
 
 
   // reload browsersync when `dist` changes
-  gulp.watch(PATHS.output + '/*').on('change', browserSync.reload);
+  gulp.watch(PATHS.output + '/*').on('change', browserSync.reload)
 
 });
 

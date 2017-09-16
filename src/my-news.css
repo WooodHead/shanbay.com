@@ -1,0 +1,96 @@
+  * {
+    /* outline: 1px solid #bbb; */
+    box-sizing: border-box;
+  }
+
+  a,
+  a:hover,
+  a:visited,
+  a:link {
+    color: #000;
+    text-decoration: none;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  #navbar {
+    background: #209e85;
+    /* background: red; */
+  }
+
+  #navbar a {
+    color: #FFF;
+    background: transparent;
+  }
+
+  .logo {
+    width: 100px;
+    margin-top: -10px;
+  }
+
+  #search-form {
+    color: #FFF;
+  }
+
+  #search-form input {
+    border-radius: 20px 0 0 20px;
+    border-right: none;
+    background: transparent;
+    width: 80px;
+    box-shadow: none;
+    transition: width 0.3s;
+  }
+
+  #search-form .search-btn {
+    border-radius: 0 20px 20px 0;
+    border-left: none;
+    background: transparent;
+    color: #FFF;
+    font-size: 15px;
+    padding: 0 8px 0 5px;
+  }
+
+  #search-form .clear-btn {
+    background: transparent;
+    color: #FFF;
+    font-size: 15px;
+    padding: 0 5px 0 5px;
+    border-right: none;
+    border-left: none;
+  }
+
+  #search-form .clear-btn:after {
+    height: 10px;
+    width: 10px;
+    display: table-cell;
+    background: red;
+    content: " ";
+    vertical-align: center;
+  }
+  /* 
+  #search-form input:focus,
+  #search-form input:active {
+    box-shadow: none;
+    border: none;
+    background: #FFF;
+    width: 120px;
+  }
+
+  #search-form input:focus+.input-group-addon {
+    border: none;
+    background: #FFF;
+    color: #999;
+  } */
+  /* */
+
+  #search-form .form-group {
+    background: #209e85;
+  }
+
+  #search-form .focus {
+    background: #FFF;
+  }
+
+  #search-form .focus input {}
