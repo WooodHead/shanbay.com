@@ -58,8 +58,9 @@
           <form id="search-form" action="" class="form-horizontal">
             <div class="form-group">
               <div class="input-group">
-                <input class="form-control search-input" type="text">
-                <span class="input-group-addon clear-btn">
+                <input class="form-control search-input" type="text" placeholder="查词">
+
+                <span class="clear-btn input-group-addon">
                   <i class="fa fa-close"></i>
                 </span>
                 <span class="input-group-addon search-btn">
@@ -76,7 +77,172 @@
 
   </nav>
 
+  <div class="container">
 
+    <div class="row">
+      <div class="col-sm-8">
+
+
+        <div class="main">
+
+          <ul class="nav nav-tabs">
+            <li class="active">
+              <a href="#favorite" aria-controls="favorite" data-toggle="tab">收藏的新闻</a></li>
+            <li class="">
+              <a href="#read" aria-controls="read" data-toggle="tab">读过的新闻</a>
+            </li>
+            <li>
+              <a href="#finished" aria-controls="finished" data-toggle="tab">读完的新闻</a>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="favorite" class="tab-pane active">
+              <div class="no-news-wrap">
+
+                <img class="no-news" src="./img/news/no-news.png" alt="">
+                <p>你还没有收藏任何新闻~</p>
+              </div>
+            </div>
+            <div id="read" class="tab-pane ">
+              <ul class="news-list">
+                <li>
+                  <a href="">
+                    <h3 class="news-title">China's biggest bitcoin exchange to halt trading</h3>
+                    <div class="row">
+
+                      <div class="col-sm-4">
+                        <div class="img-wrap">
+                          <img src="./img/speak/1.png" alt="">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-8 news-info">
+                        <div class="">
+                          <div class="news-summary">BTCChina, the country's biggest bitcoin trading platform, announced on Tuesday that the company
+                            will stop all trading from September 30, 2017, according to a statement. The decision was ...</div>
+                          <p class="news-meta">
+                            <span> 难度：
+                              <i>雅思 六级</i>
+                            </span>
+                            <span> 单词：
+                              <i>191</i>
+                            </span>
+                            <span> 读后感：
+                              <i>774</i>
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- row -->
+                    </div>
+                  </a>
+
+                </li>
+                <li>
+                  <a href="">
+                    <h3 class="news-title">China's biggest bitcoin exchange to halt trading</h3>
+                    <div class="row">
+
+                      <div class="col-sm-4">
+                        <div class="img-wrap">
+                          <img src="./img/speak/1.png" alt="">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-8 news-info">
+                        <div class="">
+                          <div class="news-summary">BTCChina, the country's biggest bitcoin trading platform, announced on Tuesday that the company
+                            will stop all trading from September 30, 2017, according to a statement. The decision was ...</div>
+                          <p class="news-meta">
+                            <span> 难度：
+                              <i>雅思 六级</i>
+                            </span>
+                            <span> 单词：
+                              <i>191</i>
+                            </span>
+                            <span> 读后感：
+                              <i>774</i>
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- row -->
+                    </div>
+                  </a>
+
+                </li>
+              </ul>
+            </div>
+            <div id="finished" class="tab-pane"></div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="col-sm-4">
+        <div class="sidebar">
+          <h2>本周最受关注新闻</h2>
+          <ul class="week-news">
+            <li class="">
+              <a href="#">
+                <h3>Samsung eyes Note 8 to win back share</h3>
+                <div class="meta">
+
+                  <span class="post-date">2017-09-14</span>
+                  <span class="comment-count">
+                    <i class="fa fa-comment-o"></i>
+                    1901</span>
+                </div>
+
+              </a>
+            </li>
+            <li class="">
+              <a href="#">
+                <h3>Samsung eyes Note 8 to win back share</h3>
+                <div class="meta">
+                  <span class="post-date">2017-09-14</span>
+                  <span class="comment-count">
+                    <i class="fa fa-comment-o"></i>
+                    1901</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-- sidebar -->
+
+          <div class="download">
+            <div class="row">
+              <div class="col-sm-4">
+                <img class="qrcode-img" src="./img/news/news-download.png" alt="">
+              </div>
+              <div class="col-sm-8">
+                <h3>扇贝新闻</h3>
+                <p>帮你读懂英语新闻</p>
+                <a class="app-link" href="">
+                  <p>扫描二维码下载扇贝新闻</p>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- row -->
+    </div>
+
+
+
+
+    <!-- container -->
+  </div>
 
   <script src="./bower_components/jquery/dist/jquery.min.js"></script>
   <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>

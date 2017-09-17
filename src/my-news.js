@@ -5,8 +5,12 @@ $(document).ready(
     var $clear = $('.clear-btn')
 
     $input.on('focus', function (e) {
-      $clear.parent().addClass('focus')
+      $input.parent().addClass('focus')
     })
 
+    $input.on('blur', function (e) {
+      $input.parent().removeClass('focus')
+    })
   }
+
 )
