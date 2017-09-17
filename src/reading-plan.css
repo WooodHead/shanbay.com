@@ -1,5 +1,5 @@
 * {
-  /* outline: 1px solid #BBB; */
+  outline: 1px solid #BBB;
   margin: 0;
   padding: 0;
 }
@@ -10,7 +10,11 @@ li {
 
 #panels .panel {
   border: 1px solid #CCC;
-  padding: 20px;
+  padding: 40px 20px;
+  max-width: 60%;
+  border-radius: 5px;
+  font-weight: 200;
+  margin: 0 auto;
 }
 
 #panels .circle {
@@ -24,19 +28,22 @@ li {
   padding: 20px 0;
 }
 
+#panels .circle-7 {
+  background: #21c4b2;
+  color: #FFF;
+}
+
+#panels .circle-30 {
+  background: #f7cf6f;
+}
+
 #panels .days-consecutive {
-  /* position: absolute; */
-  /* top: 30px; */
-  /* left: 50px; */
   font-size: 16px;
 }
 
 #panels .days-count {
   font-size: 80px;
   margin-top: -20px;
-  /* position: absolute; */
-  /* top: 30px; */
-  /* left: 60px; */
 }
 
 #panels .days-unit {
@@ -49,5 +56,43 @@ li {
 }
 
 #panels .days-unit-30 {
-  margin-left: 35px;
+  margin-left: 105px;
+}
+
+#panels .reward-wrap {
+  margin-top: 20px;
+}
+
+#panels .deposit {
+  padding: 20px 0;
+}
+
+#panels .return {
+  padding: 20px 0;
+  color: #e76857;
+}
+
+#panels .return .return-label {
+  font-size: 14px;
+}
+
+#panels .return .return-arrow {
+  font-size: 30px;
+}
+
+#panels .reward-wrap {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#panels .reward-wrap .deposit-amount,
+#panels .reward-wrap .shell-amount {
+  font-size: 35px;
+  color: #e76857;
+}
+
+#panels .credit-amount {
+  font-size: 35px;
+  color: #21c4b2;
 }
