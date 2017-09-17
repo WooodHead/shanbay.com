@@ -1,0 +1,53 @@
+* {
+  /* outline: 1px solid #BBB; */
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+#panels .panel {
+  border: 1px solid #CCC;
+  padding: 20px;
+}
+
+#panels .circle {
+  /* position: relative; */
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  border: 1px solid #CCC;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+#panels .days-consecutive {
+  /* position: absolute; */
+  /* top: 30px; */
+  /* left: 50px; */
+  font-size: 16px;
+}
+
+#panels .days-count {
+  font-size: 80px;
+  margin-top: -20px;
+  /* position: absolute; */
+  /* top: 30px; */
+  /* left: 60px; */
+}
+
+#panels .days-unit {
+  margin-top: -40px;
+  font-size: 16px;
+}
+
+#panels .days-unit-7 {
+  margin-left: 25px;
+}
+
+#panels .days-unit-30 {
+  margin-left: 35px;
+}
