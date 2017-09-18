@@ -13,104 +13,156 @@
 
 <body>
 
+  <nav id="navbar" class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle collapsed" data-target="#navbar-collapse" data-toggle="collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="" class="navbar-brand">
+          <img class="logo" src="./img/logo_v4.png" alt="">
+        </a>
 
-  <div class="main container">
-
-    <div class="header text-center">
-
-      <h2>阅读计划</h2>
-      <p>加入阅读计划，让扇贝监督你每天阅读</p>
-
-    </div>
-
-    <div id="panels" class="row">
-      <div class="col-sm-6">
-        <div class="panel">
-          <div class="circle circle-7">
-            <div class="days-consecutive">连续打卡</div>
-            <div class="days-count">7</div>
-            <div class="days-unit days-unit-7">天</div>
-          </div>
-          <div class="reward-wrap">
-            <div class="deposit">
-              <div class="deposit-label">保证金（贝壳）</div>
-              <div class="deposit-amount">500</div>
-            </div>
-            <div class="return">
-              <div class="return-label">完成返还</div>
-              <div class="return-arrow">
-                <div class="fa fa-long-arrow-right"></div>
-              </div>
-            </div>
-            <div class="reward">
-              <div class="shell">
-                <span class="shell-amount">600 </span>
-                <span class="shell-label">贝壳</span>
-              </div>
-
-              <div class="credit">
-                <span class="credit-amount">10</span>
-                <span class="credit-label">积分</span>
-              </div>
-            </div>
-
-            <!-- reward-wrap -->
-          </div>
-          <!-- panel -->
-        </div>
-        <!-- col-sm-6 -->
       </div>
 
-      <div class="col-sm-6">
-
-        <div class="panel">
-          <div class="circle circle-30">
-            <div class="days-consecutive">连续打卡</div>
-            <div class="days-count">30</div>
-            <div class="days-unit days-unit-30">天</div>
-          </div>
-
-          <div class="reward-wrap">
-            <div class="deposit">
-              <div class="deposit-label">保证金（贝壳）</div>
-              <div class="deposit-amount">2000</div>
-            </div>
-            <div class="return">
-              <div class="return-label">完成返还</div>
-              <div class="return-arrow">
-                <div class="fa fa-long-arrow-right"></div>
-              </div>
-            </div>
-            <div class="reward">
-              <div class="shell">
-                <span class="shell-amount">2500 </span>
-                <span class="shell-label">贝壳</span>
-              </div>
-
-              <div class="credit">
-                <span class="credit-amount">300</span>
-                <span class="credit-label">积分</span>
-              </div>
-            </div>
-
-            <!-- reward-wrap -->
-          </div>
-
-        </div>
+      <div class="navbar-collapse collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="">首页</a></li>
+          <li><a href="">单词</a></li>
+          <li><a href="">听力</a></li>
+          <li><a href="">口语</a></li>
+          <li><a href="">新闻</a></li>
+          <li><a href="">读书</a></li>
+          <li><a href="">炼句</a></li>
+          <li><a href="">课程</a></li>
+          <li><a href="">社区</a></li>
+        </ul>
       </div>
-
-      <!-- row -->
     </div>
+  </nav>
 
-    <div class="intro">
-      <ul>
-        <li>1和扇贝打卡绑定，帮你养成每天阅读的好习惯</li>
-        <li>2通过7天体验每天打卡的惊喜，通过30天读完一整本原版书</li>
-        <li>3计划完成后，收获贝壳和积分奖励</li>
+  <div class="container">
+
+
+    <div id="header">
+      <ul class="nav nav-tabs">
+        <li class="active">
+          <a href="#a" data-toggle="tab">新闻首页</a>
+        </li>
+        <li><a href="#a" data-toggle="tab">收藏的文章</a></li>
+        <li><a href="#a" data-toggle="tab">阅读计划</a></li>
+        <li><a href="#a" data-toggle="tab">阅读进度</a></li>
       </ul>
-
     </div>
-    <!-- main -->
+
+
+
+    <div id="main">
+
+      <div class="header text-center">
+
+        <h2>阅读计划</h2>
+        <p>加入阅读计划，让扇贝监督你每天阅读</p>
+
+      </div>
+
+      <div id="panels" class="row">
+        <div class="col-md-6 panel-wrap">
+          <div class="panel">
+            <div class="circle circle-7">
+              <div class="days-consecutive">连续打卡</div>
+              <div class="days-count">7</div>
+              <div class="days-unit days-unit-7">天</div>
+            </div>
+            <div class="reward-wrap">
+              <div class="deposit">
+                <div class="deposit-label">保证金（贝壳）</div>
+                <div class="deposit-amount">500</div>
+              </div>
+              <div class="return">
+                <div class="return-label">完成返还</div>
+                <div class="return-arrow">
+                  <div class="fa fa-long-arrow-right"></div>
+                </div>
+              </div>
+              <div class="reward">
+                <div class="shell">
+                  <span class="shell-amount">600 </span>
+                  <span class="shell-label">贝壳</span>
+                </div>
+
+                <div class="credit">
+                  <span class="credit-amount">10</span>
+                  <span class="credit-label">积分</span>
+                </div>
+              </div>
+
+              <!-- reward-wrap -->
+            </div>
+            <!-- panel -->
+          </div>
+          <!-- col-sm-6 -->
+        </div>
+
+        <div class="col-md-6 panel-wrap">
+
+          <div class="panel">
+            <div class="circle circle-30">
+              <div class="days-consecutive">连续打卡</div>
+              <div class="days-count">30</div>
+              <div class="days-unit days-unit-30">天</div>
+            </div>
+
+            <div class="reward-wrap">
+              <div class="deposit">
+                <div class="deposit-label">保证金（贝壳）</div>
+                <div class="deposit-amount">2000</div>
+              </div>
+              <div class="return">
+                <div class="return-label">完成返还</div>
+                <div class="return-arrow">
+                  <div class="fa fa-long-arrow-right"></div>
+                </div>
+              </div>
+              <div class="reward">
+                <div class="shell">
+                  <span class="shell-amount">2500 </span>
+                  <span class="shell-label">贝壳</span>
+                </div>
+
+                <div class="credit">
+                  <span class="credit-amount">300</span>
+                  <span class="credit-label">积分</span>
+                </div>
+              </div>
+
+              <!-- reward-wrap -->
+            </div>
+
+          </div>
+        </div>
+
+        <!-- row -->
+      </div>
+
+      <div id="intro">
+        <ul>
+          <li>
+            <span class="num">1</span> 和扇贝打卡绑定，帮你养成每天阅读的好习惯</li>
+          <li>
+            <span class="num">2</span>通过7天体验每天打卡的惊喜，通过30天读完一整本原版书</li>
+          <li>
+            <span class="num">3</span>计划完成后，收获贝壳和积分奖励</li>
+        </ul>
+
+      </div>
+
+      <!-- main -->
+    </div>
+
+    <!-- container -->
   </div>
 
   <script src="./bower_components/jquery/dist/jquery.min.js"></script>

@@ -1,20 +1,77 @@
 * {
-  outline: 1px solid #BBB;
+  /* outline: 1px solid #BBB; */
   margin: 0;
   padding: 0;
+}
+
+body {
+  background: #EEE;
 }
 
 li {
   list-style: none;
 }
 
+#navbar {
+  background: #209e85;
+  margin-bottom: 0;
+}
+
+#navbar .active a {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+#navbar a {
+  color: #FFF;
+}
+
+#navbar .icon-bar {
+  background: #FFF;
+}
+
+#navbar .logo {
+  width: 100px;
+  margin-top: -10px;
+}
+
+#header {
+  border: none;
+}
+
+#header li a {
+  color: #666;
+  border: none;
+}
+
+#header .active a,
+#header a:hover {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #209e85;
+  color: #209e85;
+}
+
+#main {
+  padding: 20px 100px 100px;
+  background: #FFF;
+}
+
+#panels {
+  margin: 50px 0;
+}
+
+#panels .panel-wrap {}
+
 #panels .panel {
   border: 1px solid #CCC;
-  padding: 40px 20px;
-  max-width: 60%;
+  padding: 40px 20px 30px;
+  max-width: 70%;
+  min-width: 250px;
   border-radius: 5px;
   font-weight: 200;
   margin: 0 auto;
+  cursor: pointer;
+  margin-bottom: 30px;
 }
 
 #panels .circle {
@@ -60,7 +117,7 @@ li {
 }
 
 #panels .reward-wrap {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 #panels .deposit {
@@ -68,21 +125,22 @@ li {
 }
 
 #panels .return {
-  padding: 20px 0;
+  padding: 30px 0 0;
   color: #e76857;
 }
 
 #panels .return .return-label {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 #panels .return .return-arrow {
   font-size: 30px;
+  margin-top: -5px;
 }
 
 #panels .reward-wrap {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
 }
 
@@ -95,4 +153,25 @@ li {
 #panels .credit-amount {
   font-size: 35px;
   color: #21c4b2;
+}
+
+#intro {
+  line-height: 30px;
+  padding-left: 80px;
+}
+
+#intro .num {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 1px solid #CCC;
+  background: #21c4b2;
+  color: #FFF;
+  text-align: center;
+  margin-right: 10px;
+}
+
+#intro li {
+  margin: 10px 0;
 }
