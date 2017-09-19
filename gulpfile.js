@@ -54,7 +54,7 @@ gulp.task('css', function () {
 
 gulp.task('js', function () {
   return gulp.src(PATHS.src + '/**/*.js')
-    .pipe(gulp.dest(PATHS.output + '/js'));
+    .pipe(gulp.dest(PATHS.output));
 });
 
 gulp.task('html', function () {
