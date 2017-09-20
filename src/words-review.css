@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* outline: 1px solid #CCC; */
+  outline: 1px solid #CCC;
 }
 
 body {
@@ -38,6 +38,52 @@ body {
 
 #navbar .navbar-header button.collapsed {
   background: transparent;
+}
+
+#navbar .input-group {
+  border-radius: 20px;
+  border: 1px solid #CCC;
+  width: 120px;
+}
+
+#navbar .input-group.focus {
+  width: 200px;
+  background: #FFF;
+}
+
+#navbar #search-input,
+#navbar #search-input:focus,
+#navbar #clear-btn,
+#navbar #search-btn {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+#navbar #search-btn {
+  padding-left: 5px;
+  color: #CCC;
+}
+
+#navbar #clear-btn {
+  padding-left: 5px;
+  padding-right: 0;
+  color: #666;
+  cursor: pointer;
+  display: none;
+}
+
+#navbar #clear-btn .fa-close {
+  border-right: 1px solid #666;
+  padding-right: 5px;
+}
+
+#navbar .focus #clear-btn {
+  display: table-cell;
+}
+
+#navbar .focus #search-btn {
+  color: #666;
 }
 
 #tabs,
