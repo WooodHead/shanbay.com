@@ -7,7 +7,7 @@ $(document).ready(function () {
   })
 
   $clear.on('click', function (e) {
-    $input.val('clear').focus()
+    $input.val('').focus()
   })
 
   $input.on('blur', function (e) {

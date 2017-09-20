@@ -75,11 +75,9 @@ li {
 }
 
 #panels .circle {
-  /* position: relative; */
   width: 160px;
   height: 160px;
   border-radius: 100%;
-  border: 1px solid #CCC;
   text-align: center;
   margin: 0 auto;
   padding: 20px 0;
@@ -174,4 +172,44 @@ li {
 
 #intro li {
   margin: 10px 0;
+}
+
+.modal-header h3 {
+  margin: 0;
+}
+
+.modal-dialog {
+  margin: 50px auto;
+}
+
+.modal-body {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.modal-body p {
+  margin-bottom: 20px;
+}
+
+.modal-body .price {
+  color: #289d85;
+  margin: 0 5px 0;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.modal-footer {
+  text-align: center;
+}
+
+.modal-footer button {
+  background: #289d85;
+  border: none;
+  padding: 10px 30px;
+}
+
+.modal-body .sorry {
+  font-size: 16px;
 }

@@ -29,11 +29,11 @@
 
       <div class="navbar-collapse collapse" id="navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="">首页</a></li>
+          <li class=""><a href="">首页</a></li>
           <li><a href="">单词</a></li>
           <li><a href="">听力</a></li>
           <li><a href="">口语</a></li>
-          <li><a href="">新闻</a></li>
+          <li class="active"><a href="">新闻</a></li>
           <li><a href="">读书</a></li>
           <li><a href="">炼句</a></li>
           <li><a href="">课程</a></li>
@@ -45,14 +45,13 @@
 
   <div class="container">
 
-
     <div id="header">
       <ul class="nav nav-tabs">
-        <li class="active">
+        <li class="">
           <a href="#a" data-toggle="tab">新闻首页</a>
         </li>
         <li><a href="#a" data-toggle="tab">收藏的文章</a></li>
-        <li><a href="#a" data-toggle="tab">阅读计划</a></li>
+        <li class="active"><a href="#a" data-toggle="tab">阅读计划</a></li>
         <li><a href="#a" data-toggle="tab">阅读进度</a></li>
       </ul>
     </div>
@@ -70,7 +69,7 @@
 
       <div id="panels" class="row">
         <div class="col-md-6 panel-wrap">
-          <div class="panel">
+          <div class="panel" data-toggle="modal" data-target="#week-modal">
             <div class="circle circle-7">
               <div class="days-consecutive">连续打卡</div>
               <div class="days-count">7</div>
@@ -108,7 +107,7 @@
 
         <div class="col-md-6 panel-wrap">
 
-          <div class="panel">
+          <div class="panel" data-toggle="modal" data-target="#month-modal">
             <div class="circle circle-30">
               <div class="days-consecutive">连续打卡</div>
               <div class="days-count">30</div>
@@ -145,6 +144,52 @@
         </div>
 
         <!-- row -->
+      </div>
+
+      <div class="modal" id="week-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" data-dismiss="modal">
+                <span>×</span>
+              </button>
+              <h3>加入计划 7天阅读计划</h3>
+            </div>
+            <div class="modal-body">
+              <p>账户余额
+                <span class="price">0</span>贝壳</p>
+              <p>你要支付
+                <span class="price">500</span>贝壳</p>
+              <p class="sorry">抱歉，你的贝壳不够哦~</p>
+
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary">去充值</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="month-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" data-dismiss="modal">
+                <span>×</span>
+              </button>
+              <h3>加入计划 30天阅读计划</h3>
+            </div>
+            <div class="modal-body">
+              <p>账户余额
+                <span class="price">0</span>贝壳</p>
+              <p>你要支付
+                <span class="price">2000</span>贝壳</p>
+              <p class="sorry">抱歉，你的贝壳不够哦~</p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary">去充值</button>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div id="intro">
