@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="words-review.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default" id="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="" class="navbar-brand">
+          <img src="./img/logo_v4.png" alt="" class="logo">
+        </a>
+      </div>
+      <div class="navbar-collapse collapse" id="navbar-collapse">
+
+        <ul class="nav navbar-nav">
+          <li><a href="">首页</a></li>
+          <li><a href="">单词</a></li>
+          <li><a href="">听力</a></li>
+          <li><a href="">口语</a></li>
+          <li><a href="">新闻</a></li>
+          <li><a href="">读书</a></li>
+          <li><a href="">炼句</a></li>
+          <li><a href="">课程</a></li>
+          <li><a href="">社区</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <ul id="tabs" class="nav nav-tabs">
+      <li class="active"><a href="#a" data-toggle="tab">单词学习</a></li>
+      <li><a href="#a" data-toggle="tab">扩展包</a></li>
+      <li><a href="#a" data-toggle="tab">单词书</a></li>
+      <li><a href="#a" data-toggle="tab">我的词库</a></li>
+      <li><a href="#a" data-toggle="tab">单词量测试</a></li>
+      <li><a href="#a" data-toggle="tab">单词进度</a></li>
+      <li><a href="#a" data-toggle="tab">单词设置</a></li>
+
+    </ul>
+
+    <div id="main">
+
+      <div class="header text-center">
+        <h2>扇贝单词</h2>
+      </div>
+
+      <div class="panel clearfix">
+        <div class="today-words">
+          <p class="words-count">100</p>
+          <p class="words-label">今日单词</p>
+        </div>
+        <div class="new-words">
+          <p class="words-count">0</p>
+          <p clsas="words-label">新词</p>
+        </div>
+        <button class="btn btn-primary">开始学习</button>
+      </div>
+
+      <blockquote>
+
+        <p>We have too many high-sounding words, and too few actions that correspond with them.</p>
+        <p>我们有太多豪言壮语，却鲜有行动将其付诸实践。</p>
+        <cite>Abigail Adams</cite>
+
+      </blockquote>
+
+    </div>
+
+
+
+  </div>
+
+
+  <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./words-review.js"></script>
+</body>
+
+</html>
