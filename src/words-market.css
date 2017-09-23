@@ -4,10 +4,11 @@
 
 body {
   background: #EEE;
+  padding-bottom: 50px;
 }
 
 a:hover {
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 #navbar {
@@ -163,8 +164,9 @@ a:hover {
 
 #main {
   background: #FFF;
-  margin-top: 30px;
-  padding: 25px;
+  /* margin-top: 30px; */
+  padding: 25px 40px;
+  border-radius: 5px;
 }
 
 #main h2 {

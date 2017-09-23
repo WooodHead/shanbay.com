@@ -1,0 +1,89 @@
+#navbar {
+  background: #209e85;
+  border: none;
+  border-radius: 0;
+}
+
+#navbar .logo {
+  height: 20px;
+  margin-top: -1px;
+}
+
+#navbar a {
+  color: #FFF;
+}
+
+#navbar a:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#navbar .icon-bar {
+  background: #FFF;
+}
+
+#navbar #input-group {
+  border-radius: 20px;
+  border: 1px solid #CCC;
+}
+
+#navbar .dropdown-menu a {
+  color: #333;
+}
+
+#navbar .dropdown-menu a:hover {
+  background: #209e85;
+  color: #FFF;
+}
+
+#navbar .dropdown.open>a {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#search-input,
+#clear-btn,
+#search-btn {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  color: #CCC;
+}
+
+#search-input {
+  width: 60px;
+  padding-right: 0;
+  transition: width 0.3s;
+}
+
+#search-input::placeholder {
+  color: #CCC;
+}
+
+#clear-btn {
+  padding-right: 0;
+  padding-left: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+#clear-btn:after {
+  content: "|";
+  margin-left: 3px;
+}
+
+#search-btn {
+  padding-left: 6px;
+}
+
+#navbar #input-group.focus {
+  background: #FFF;
+  border-color: #FFF;
+}
+
+.focus #search-input {
+  width: 120px;
+  color: #333;
+}
+
+.focus #clear-btn {
+  display: table-cell;
+}
