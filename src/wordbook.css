@@ -22,11 +22,6 @@
   background: #FFF;
 }
 
-#input-group {
-  border-radius: 20px;
-  border: 1px solid #FFF;
-}
-
 #navbar .dropdown-menu a {
   color: #333;
 }
@@ -38,6 +33,11 @@
 
 #navbar .dropdown.open>a {
   background: rgba(0, 0, 0, 0.2);
+}
+
+#input-group {
+  border-radius: 20px;
+  border: 1px solid #FFF;
 }
 
 #search-input,
