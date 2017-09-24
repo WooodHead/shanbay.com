@@ -83,4 +83,4 @@ gulp.task('watch', function () {
 
 gulp.task('auto', ['browserSync', 'watch']);
 
-// gulp.task('default', ['css', 'nunjucks']);
+gulp.task('default', ['auto']);

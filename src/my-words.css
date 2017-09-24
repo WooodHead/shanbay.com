@@ -1,0 +1,210 @@
+* {
+  outline: 1px solid #bbb;
+}
+
+body {
+  background: #EEE;
+  padding-bottom: 50px;
+}
+
+a:hover {
+  /* text-decoration: none; */
+}
+
+#navbar {
+  background: #209e85;
+  margin-bottom: 0;
+}
+
+#navbar a {
+  color: #FFF;
+}
+
+#navbar a:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#navbar .dropdown.open {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#navbar .dropdown a {
+  background: transparent;
+}
+
+#navbar .dropdown a:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#navbar .dropdown-menu li a {
+  color: #666;
+}
+
+#navbar .dropdown-menu li a:hover {
+  background: #209e85;
+  color: #FFF;
+}
+
+.logo {
+  height: 20px;
+}
+
+#navbar .icon-bar {
+  background: #FFF;
+}
+
+#navbar .navbar-toggle:focus,
+#navbar .navbar-toggle:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#input-group {
+  border: 1px solid #FFF;
+  border-radius: 25px;
+  width: 120px;
+  transition: width 0.3s;
+}
+
+#search-input::placeholder {
+  color: #FFF;
+}
+
+.focus #search-input::placeholder {
+  color: #999;
+}
+
+#search-input,
+#clear-btn,
+#search-btn {
+  border: none;
+  background: transparent;
+  color: #FFF;
+  box-shadow: none;
+}
+
+#clear-btn {
+  display: none;
+  padding-left: 5px;
+  padding-right: 0;
+  cursor: pointer;
+  /* border-right: 1px solid #FFF; */
+}
+
+#clear-btn:after {
+  content: "|";
+  margin-left: 5px;
+  /* display: table-cell;
+  background: red;
+  width: 2px;
+  height: 2px; */
+}
+
+#search-btn {
+  padding-left: 5px;
+}
+
+#input-group.focus {
+  border-color: #FFF;
+  background: #FFF;
+  width: 160px;
+}
+
+.focus #search-input,
+.focus #clear-btn,
+.focus #search-btn {
+  border: none;
+  box-shadow: none;
+}
+
+.focus #search-input {
+  color: #333;
+  padding-right: 0;
+}
+
+.focus #clear-btn {
+  color: #999;
+  display: table-cell;
+}
+
+.focus #search-btn {
+  color: #999;
+}
+
+
+/* 
+#tabs,
+#tabs a,
+#tabs li,
+#tabs .active,
+#tabs .active a,
+{
+  border: none;
+  background: #FFF;
+} */
+
+#tabs,
+#tabs li,
+#tabs a {
+  border: none;
+}
+
+#tabs .active a,
+#tabs a:hover {
+  background: transparent;
+  border-bottom: 2px solid #209e85;
+}
+
+#tabs .active a {
+  color: #209e85;
+}
+
+#tabs a {
+  color: #666;
+}
+
+#main {
+  background: #FFF;
+}
+
+.word-list {
+  padding: 20px;
+}
+
+.word-wrap {
+  background: #EEE;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+.check-btn,
+.delete-btn {
+  padding: 2px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.word-part {
+  margin-bottom: 5px;
+}
+
+.word-name {
+  color: #209e85;
+}
+
+.sidebar a {
+  padding: 10px;
+  background: #63a3ce;
+  display: block;
+  width: 150px;
+  margin: 10px auto;
+  text-align: center;
+  color: #FFF;
+}
+
+@media (min-width: 768px) {
+  .align {
+    display: flex;
+    align-items: center;
+  }
+}
